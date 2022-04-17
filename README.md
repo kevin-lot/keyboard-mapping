@@ -1,10 +1,8 @@
-### A specific keyboard mapping for Linux.
+### A specific keyboard mapping for Linux and MacOs
 
+Presently, they are not equivalent ...still in progress to be.
 
-<img src="keyboard_mapping.png"
-     alt=""
- />
-<!--
+```
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
 │ #   │ 1   │ 2   │ 3   │ 4   │ 5   │ 6   │ 7   │ 8   │ 9   │ 0   │     │ _   ┃ ⌫ Retour┃
 │ @   │ &   │ é ~ │ " ¨ │ ' ^ │ %   │ |   │ è ` │ ù   │ ç   │ à   │ °   │ -   ┃  arrière┃
@@ -21,4 +19,4 @@
 ┃       ┃       ┃       ┃ ␣         Espace fine insécable ⍽ ┃       ┃       ┃       ┃
 ┃Ctrl   ┃Meta   ┃Alt    ┃ ␣ Espace       Espace insécable ⍽ ┃AltGr ⇮┃Menu   ┃Ctrl   ┃
 ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
--->
+```
