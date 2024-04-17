@@ -1,29 +1,29 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!---->
-<!--Last edited by Ukelele version 346 on 2022-01-20 at 01:19 (CET)-->
-<keyboard group="126" id="-24075" name="iooK4" maxout="1">
+<!--Last edited by Ukelele version 396 on 2024-04-17 at 21:37 (CEST)-->
+<keyboard group="126" id="-24075" name="iooK5" maxout="1">
     <layouts>
         <layout first="0" last="0" mapSet="138" modifiers="30"/>
     </layouts>
     <modifierMap id="30" defaultIndex="0">
         <keyMapSelect mapIndex="0">
-            <modifier keys="command? anyControl?"/>
+            <modifier keys="anyShift? caps? anyOption? command? anyControl?"/>
         </keyMapSelect>
         <keyMapSelect mapIndex="1">
-            <modifier keys="anyShift caps? command? anyControl?"/>
+            <modifier keys="anyShift caps? anyOption? command? anyControl?"/>
         </keyMapSelect>
         <keyMapSelect mapIndex="2">
-            <modifier keys="caps command? anyControl?"/>
+            <modifier keys="anyShift? caps anyOption? command? anyControl?"/>
         </keyMapSelect>
         <keyMapSelect mapIndex="3">
-            <modifier keys="anyOption command? anyControl?"/>
+            <modifier keys="anyShift? caps? anyOption command? anyControl?"/>
         </keyMapSelect>
         <keyMapSelect mapIndex="4">
             <modifier keys="anyShift caps? anyOption command? anyControl?"/>
         </keyMapSelect>
         <keyMapSelect mapIndex="5">
-            <modifier keys="caps anyOption command? anyControl?"/>
+            <modifier keys="anyShift? caps anyOption command? anyControl?"/>
         </keyMapSelect>
     </modifierMap>
     <keyMapSet id="138">
@@ -58,7 +58,7 @@
             <key code="27" output="°"/>
             <key code="28" output="ù"/>
             <key code="29" output="à"/>
-            <key code="30" output="*"/>
+            <key code="30" output="$"/>
             <key code="31" action="a14"/>
             <key code="32" action="a15"/>
             <key code="33" output="/"/>
@@ -169,7 +169,7 @@
             <key code="27" output="°"/>
             <key code="28" output="8"/>
             <key code="29" output="0"/>
-            <key code="30" output="$"/>
+            <key code="30" output="*"/>
             <key code="31" action="a5"/>
             <key code="32" action="a6"/>
             <key code="33" output="\"/>
@@ -280,7 +280,7 @@
             <key code="27" output="°"/>
             <key code="28" output="Ù"/>
             <key code="29" output="À"/>
-            <key code="30" output="*"/>
+            <key code="30" output="$"/>
             <key code="31" action="a5"/>
             <key code="32" action="a6"/>
             <key code="33" output="/"/>
@@ -496,7 +496,7 @@
             <key code="21" output="4"/>
             <key code="22" output="6"/>
             <key code="23" output="5"/>
-            <key code="24" output="–"/>
+            <key code="24" output="_"/>
             <key code="25" output="9"/>
             <key code="26" output="7"/>
             <key code="27" output="°"/>
@@ -616,13 +616,13 @@
             <key code="30" output="€"/>
             <key code="31" output="Œ"/>
             <key code="32" output="ª"/>
-            <key code="33" output="ô"/>
+            <key code="33" output="\"/>
             <key code="34" output="ï"/>
             <key code="35" output="∏"/>
             <key code="36" output="&#x000D;"/>
             <key code="37" output="|"/>
             <key code="38" output="Í"/>
-            <key code="39" output="Ù"/>
+            <key code="39" output="{"/>
             <key code="40" output="Ë"/>
             <key code="41" output="Ó"/>
             <key code="42" output="@"/>

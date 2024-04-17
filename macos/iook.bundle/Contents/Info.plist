@@ -7,13 +7,15 @@
 	<key>CFBundleName</key>
 	<string>iook</string>
 	<key>CFBundleVersion</key>
-	<string>4</string>
-	<key>KLInfo_iooK4</key>
+	<string>5</string>
+	<key>KLInfo_iooK5</key>
 	<dict>
 		<key>TICapsLockLanguageSwitchCapable</key>
 		<false/>
+		<key>TISIconIsTemplate</key>
+		<false/>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout.unsavedukeleledocument.iook4</string>
+		<string>org.sil.ukelele.keyboardlayout.unsavedukeleledocument.iook5</string>
 		<key>TISIntendedLanguage</key>
 		<string>fr</string>
 	</dict>
