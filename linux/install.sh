@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -o xtrace -o nounset -o pipefail
+
 INSTALL_PATH=/usr/share/X11/xkb
 
 for FILE in ${INSTALL_PATH}/rules/base.lst ${INSTALL_PATH}/rules/evdev.lst ${INSTALL_PATH}/rules/base.xml ${INSTALL_PATH}/rules/evdev.xml ${INSTALL_PATH}/symbols/fr; do
@@ -28,8 +30,8 @@ cat <<"EOF" >>${INSTALL_PATH}/symbols/fr
 // │ #   │ 1   │ 2   │ 3   │ 4   │ 5   │ 6   │ 7   │ 8   │ 9   │ 0   │     │ _   ┃ ⌫ Retour┃
 // │ @   │ &   │ é ~ │ " ¨ │ ' ^ │ %   │ |   │ è ` │ ù   │ ç   │ à   │ °   │ -   ┃  arrière┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
-// ┃       ┃     │     │     │     │     │     │     │     │     │     │     │ $ ¥ ┃Entrée ┃
-// ┃Tab ↹  ┃ A   │ Z   │ E € │ R   │ T   │ Y   │ U   │ I   │ O Œ │ P   │ /   │ * £ ┃   ⏎   ┃
+// ┃       ┃     │     │     │     │     │     │     │     │     │     │     │ * ¥ ┃Entrée ┃
+// ┃Tab ↹  ┃ A   │ Z   │ E € │ R   │ T   │ Y   │ U   │ I   │ O Œ │ P   │ /   │ $ £ ┃   ⏎   ┃
 // ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
 // ┃        ┃     │     │     │     │     │     │     │     │     │     │ {   │ }   ┃      ┃
 // ┃Maj ⇬   ┃ Q   │ S   │ D   │ F   │ G   │ H   │ J   │ K   │ L   │ M   │ ( [ │ ) ] ┃      ┃
