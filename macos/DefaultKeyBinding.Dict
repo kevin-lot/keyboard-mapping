@@ -1,0 +1,88 @@
+/* ~/Library/KeyBindings/DefaultKeyBinding.Dict
+
+This file remaps the key bindings of a single user on Mac OS X 10.5 to more
+closely match default behavior on Windows systems. This makes the Command key
+behave like Windows Control key. To use Control instead of Command, either swap
+Control and Command in Apple->System Preferences->Keyboard->Modifier Keys...
+or replace @ with ^ in this file.
+
+Here is a rough cheatsheet for syntax.
+Key Modifiers
+^ : Ctrl
+$ : Shift
+~ : Option (Alt)
+@ : Command (Apple)
+# : Numeric Keypad
+
+Non-Printable Key Codes
+
+Standard
+F1:           \UF704
+F2:           \UF705
+F3:           \UF706
+
+Note: typically the Windows 'Insert' key is mapped to what Macs call 'Help'.
+Regular Mac keyboards don't even have the Insert key, but provide 'Fn' instead,
+which is completely different.
+
+Insert:       \UF727     Help:         \UF746
+Delete:       \UF728
+Home:         \UF729
+End:          \UF72B
+Page Up:      \UF72C
+Page Down:    \UF72D
+
+Up Arrow:     \UF700
+Down Arrow:   \UF701
+Left Arrow:   \UF702
+Right Arrow:  \UF703
+
+Backspace:    \U0008     OS X delete:  \U007F
+Enter:        \U000A
+
+Escape:       \U001B
+Tab:          \U0009
+
+Print Screen: \UF72E
+Scroll Lock:  \UF72F
+Break:        \UF732
+Pause:        \UF730
+SysReq:       \UF731
+Menu:         \UF735
+
+For a good reference see:
+
+http://osxnotes.net/keybindings.html
+https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html
+Note: You can use programmatic function inside this file. For example, to uppercase work.
+https://developer.apple.com/documentation/appkit/nsstandardkeybindingresponding
+*/
+
+{
+    "\UF72C"   = "pageUp:";                                      /* PageUp       */
+    "\UF72D"   = "pageDown:";                                    /* PageDown     */
+    "$\UF728"  = "cut:";                                         /* Shift + Del  */
+    "$\UF727"  = "paste:";                                       /* Shift + Ins */
+    "$\UF746"  = "paste:";                                       /* Shift + Help (Ins) */
+    "@\UF727"  = "copy:";                                        /* Cmd  + Ins  */
+    "@\UF746"  = "copy:";                                        /* Cmd  + Help (Ins) */
+
+    "\UF729"   = "moveToBeginningOfLine:";                       /* Home         */
+    "$\UF729"  = "moveToBeginningOfLineAndModifySelection:";     /* Shift + Home */
+    "@\UF729"  = "moveToBeginningOfDocument:";                   /* Cmd  + Home  */
+    "@$\UF729" = "moveToBeginningOfDocumentAndModifySelection:"; /* Shift + Cmd  + Home */
+
+    "\UF72B"   = "moveToEndOfLine:";                             /* End          */
+    "$\UF72B"  = "moveToEndOfLineAndModifySelection:";           /* Shift + End  */
+    "@\UF72B"  = "moveToEndOfDocument:";                         /* Cmd  + End   */
+    "@$\UF72B" = "moveToEndOfDocumentAndModifySelection:";       /* Shift + Cmd  + End */
+
+    "@\UF702"  = "moveWordBackward:";                            /* Cmd  + LeftArrow */
+    "@$\UF702" = "moveWordBackwardAndModifySelection:";          /* Shift + Cmd  + Leftarrow */
+    "@\UF703"  = "moveWordForward:";                             /* Cmd  +  */
+    "@$\UF703" = "moveWordForwardAndModifySelection:";           /* Shift + Cmd  + Rightarrow */
+
+    "@\U007F"  = "deleteWordBackward:";                          /* Cmd  + OS X delete */
+    "@\U0008"  = "deleteWordBackward:";                          /* Cmd  + Backspace */
+    "@\UF728"  = "deleteWordForward:";                           /* Cmd  + Delete */
+}
