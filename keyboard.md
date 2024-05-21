@@ -1,4 +1,4 @@
-shortcuts wanted on JetBrains
+Shortcuts wanted on JetBrains
 
 |                         | windows / linux   | mac               |
 |-------------------------|-------------------|-------------------|

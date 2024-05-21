@@ -78,9 +78,14 @@ https://developer.apple.com/documentation/appkit/nsstandardkeybindingresponding
     "@$\UF72B" = "moveToEndOfDocumentAndModifySelection:";       /* Shift + Cmd  + End */
 
     "@\UF702"  = "moveWordBackward:";                            /* Cmd  + LeftArrow */
-    "@$\UF702" = "moveWordBackwardAndModifySelection:";          /* Shift + Cmd  + Leftarrow */
-    "@\UF703"  = "moveWordForward:";                             /* Cmd  +  */
-    "@$\UF703" = "moveWordForwardAndModifySelection:";           /* Shift + Cmd  + Rightarrow */
+    "~\UF702"  = "moveWordBackward:";                            /* Option + LeftArrow */
+    "@$\UF702" = "moveWordBackwardAndModifySelection:";          /* Shift + Cmd + Leftarrow */
+    "~$\UF702" = "moveWordBackwardAndModifySelection:";          /* Shift + Cmd + Leftarrow */
+
+    "@\UF703"  = "moveWordForward:";                             /* Cmd  +  Rightarrow */
+    "~\UF703"  = "moveWordForward:";                             /* Option + Rightarrow */
+    "@$\UF703" = "moveWordForwardAndModifySelection:";           /* Shift + Cmd + Rightarrow */
+    "~$\UF703" = "moveWordForwardAndModifySelection:";           /* Shift + Option + Rightarrow */
 
     "@\U007F"  = "deleteWordBackward:";                          /* Cmd  + OS X delete */
     "@\U0008"  = "deleteWordBackward:";                          /* Cmd  + Backspace */
