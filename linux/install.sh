@@ -16,6 +16,7 @@ if [[ $1 == "uninstall" ]]; then
   exit 0
 fi
 
+# install script
 for FILE in ${INSTALL_PATH}/rules/base.lst ${INSTALL_PATH}/rules/evdev.lst ${INSTALL_PATH}/rules/base.xml ${INSTALL_PATH}/rules/evdev.xml ${INSTALL_PATH}/symbols/fr; do
   if [ ! -f "${FILE}.iook.bck" ]; then
     cp ${FILE} ${FILE}.iook.bck
